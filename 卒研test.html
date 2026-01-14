@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポートセンター</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .search-section {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    .search-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .search-section p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .chat-guide {
+      background-color: #e8f4fd;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .chat-guide-icon {
+      font-size: 1.5rem;
+    }
+
+    .chat-guide-text {
+      color: #1a73e8;
+      font-weight: 500;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .category-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .category-card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-card h4 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .category-card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #999;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📘 サポートセンター</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>何かお困りですか？</h2>
+      <p>マニュアルやよくある質問をAIチャットで検索できます</p>
+    </section>
+
+    <section class="search-section">
+      <h3>AIチャットで質問する</h3>
+      <p>右下のチャットアイコンをクリックして、知りたいことを質問してください。</p>
+      <div class="chat-guide">
+        <span class="chat-guide-icon">💬</span>
+        <span class="chat-guide-text">画面右下のチャットからご質問いただけます →</span>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="category-card">
+        <h4>📖 はじめに</h4>
+        <p>基本的な使い方や初期設定について</p>
+      </div>
+      <div class="category-card">
+        <h4>⚙️ 設定・カスタマイズ</h4>
+        <p>各種設定の変更方法</p>
+      </div>
+      <div class="category-card">
+        <h4>❓ よくある質問</h4>
+        <p>お問い合わせの多い質問と回答</p>
+      </div>
+      <div class="category-card">
+        <h4>🔧 トラブルシューティング</h4>
+        <p>問題が起きたときの対処法</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 サポートセンター</p>
+  </footer>
+
+  <!-- ============================================
+       Dify チャットボット埋め込みコード
+       以下のコメント部分を、Difyで取得した埋め込みコードに置き換えてください
+       ============================================ -->
+  
+  <!-- 
+  <script>
+    window.difyChatbotConfig = {
+      token: 'ここにDifyのトークンを入れる'
+    }
+  </script>
+  <script
+    src="https://あなたのDifyドメイン/embed.min.js"
+    defer>
+  </script>
+  -->
+
+</body>
+</html>
